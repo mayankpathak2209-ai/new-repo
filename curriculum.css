@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(244, 236, 173);
+}
+h1 {
+    color: rgb(104, 5, 209);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(243, 194, 231);
+}
+h2{
+    color: rgb(71, 95, 6);
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(38, 250, 10);
+}
+p {
+    
+    font-family: cursive;
+    background-color: rgb(96, 249, 198);
+}
+h3 {
+    color: rgba(2, 1, 2, 0.879);
+    font-family: 'Georgia', serif;
+    background-color: rgb(237, 209, 163);
+}
+ul {
+    background-color: rgb(96, 249, 198);
+}

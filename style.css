@@ -1,0 +1,43 @@
+body {
+    background-color: #ef9f9f;
+    }
+h2 {
+    background-color: rgb(206, 238, 148);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(83, 36, 224);
+}
+p {
+    background-color: rgb(144, 201, 234);
+}
+label {
+    font-family: cursive;
+    color: rgb(32, 23, 152);
+    font-size: large;
+}
+input {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    background-position: 0cqmax;
+    background-color: rgb(205, 241, 64);
+}
+form {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 50px;
+    background-color: rgb(240, 240, 240);
+}
+button {
+    background-color: rgb(34, 199, 34);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(12, 112, 12);
+}
+select {
+    font-family: 'Lucida Console', 'Courier New', monospace;
+    font-size: medium;
+    background-color: rgb(205, 241, 64);
+}

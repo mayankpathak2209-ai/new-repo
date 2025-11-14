@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(199, 218, 167);
+}
+h2 {
+    color: rgb(232, 10, 10);
+}
+th {
+    background-color: yellow;
+}   
+td {
+    background-color: rgb(255, 143, 143);
+}

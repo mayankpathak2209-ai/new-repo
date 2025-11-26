@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Booking form</title>
+</head>
+<body>
+    <h2>Hotel Room Booking form</h2>
+    <form>
+        <p><label for="guestname">Full Name:</label>
+        <input type="text" id="guestname" name="guestname" required>
+    </p>
+        <p><label for="email">Email:</label>
+        <input type="text" id="email" name="email" required></p>
+        <p><label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+    </p>
+    <p><label for="checkin">Check-in-Date:</label>
+    <input type="date" id="checkin" name="checkin" required>
+    </p>
+    <p><label for="checkout">Check-out-Date:</label>
+    <input type="date" id="checkout" name="checkout" required>
+    </p>
+    <p><label for="roomtype">Room Type:</label></p>
+    <select id="roomtype" name="roomtype" required>
+        <option value="">Select a Room</option>
+        <option value="single">Single Room</option>
+        <option value="double">Double Room</option>
+        <option value="triple">Triple Room</option>
+    </select>
+    <p><label for="guests">Number of Guests:</label></p>
+    <select id="guests" name="guests" required>
+        <option value="">Choose Number</option>
+        <option value="1">1 Guest</option>
+        <option value="2">2 Guests</option>
+        <option value="3">3 Guests</option>
+        <option value="4">4 Guests</option>
+        <option value="5">5 Guests</option>
+    </select>
+        
+     <p><label for="requests">Special Requests:</label>
+        <textarea id="requests" name="requests" rows="4" cols="50"></textarea>
+    </p>
+        <p>
+            <button type="submit">Submit</button>
+            <button type="reset">Clear Form</button>
+        </p>
+    </form>
+</body>
+</html>

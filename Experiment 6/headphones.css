@@ -2,7 +2,7 @@ body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f6e5e5;
+    background-color: #f4f4f4;
     color: #a731ba;
 }
 .page-container {
@@ -45,7 +45,7 @@ body{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
 }
 .product-image {
-    width: 50%;
+    width: 55%;
     height: auto;
     padding-right: 20px;
 }
@@ -53,7 +53,7 @@ body{
     width: 100%;
     border-radius: 8px;
     height: auto;
-    border: 0.5px solid #3d5757;
+    border: 0.5px solid #e81c34;
 }
 .product-info {
   width: 60%;                    /* WIDTH of info section */

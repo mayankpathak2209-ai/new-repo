@@ -1,0 +1,31 @@
+body {font-family: Arial;padding: 10px;background: #f7f7f7;
+}
+
+h1 {text-align: center; margin-bottom: 20px;
+}
+.grid {display: grid;grid-template-columns: 1fr;gap: 15px;
+}
+.card {background: white;padding: 10px;border: 1px solid #ddd;text-align: center;
+}
+
+.card img {width: 100%;max-width: 150px;
+}
+
+.card h3 {margin: 10px 0 5px;
+}
+
+.card p {margin: 5px 0 10px;font-weight: bold;color: green;
+}
+
+.card button {padding: 8px 12px;background: dodgerblue;border: none;color: white;cursor: pointer;
+}
+.card button:hover {background: #004a99;
+}
+@media (min-width: 600px) {
+    .grid {grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 900px) {
+    .grid {grid-template-columns: repeat(3, 1fr);
+    }
+}

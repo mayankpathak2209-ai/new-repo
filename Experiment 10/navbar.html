@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <style>
+        /* CSS Custom Properties for modularity */
+        :root {
+            --primary-bg: #000;
+            --text-color: #fff;
+            --hover-color: #ddd;
+            --font-family: Arial, sans-serif;
+            --spacing-sm: 0.5rem;
+            --spacing-md: 1rem;
+            --spacing-lg: 2rem;
+            --transition: color 0.3s ease;
+            --bar-width: 25px;
+            --bar-height: 3px;
+            --bar-margin: 3px;
+        }
+
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: rgb(209, 228, 171);
+        }
+
+        /* Navbar Component */
+        .navbar {
+            background-color: rgb(205, 22, 205);
+            color: var(--text-color);
+            padding: var(--spacing-md) 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+
+        /* Logo Component */
+        .nav-logo {
+            flex: 0 0 auto;
+        }
+
+        .nav-logo a {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: var(--text-color);
+        }
+
+        /* Menu Component - Centered */
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: var(--spacing-lg);
+            flex: 1;
+            justify-content: center;
+        }
+
+        .nav-item {
+            flex: 0 0 auto;
+        }
+
+        .nav-item a {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .nav-item a:hover {
+            color: var(--hover-color);
+        }
+
+        /* Icons Component */
+        .nav-icons {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+            flex: 0 0 auto;
+        }
+
+        .nav-icon {
+            position: relative;
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+
+        .nav-icon:hover {
+            color: var(--hover-color);
+        }
+
+        .cart-badge {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            padding: 2px 6px;
+            font-size: 0.8rem;
+            min-width: 18px;
+            text-align: center;
+        }
+
+        /* Mobile Responsiveness - Always visible, adjusted for smaller screens */
+        @media screen and (max-width: 768px) {
+            .nav-container {
+                padding: 0 var(--spacing-sm);
+            }
+
+            .nav-logo a {
+                font-size: 1.2rem;
+            }
+
+            .nav-menu {
+                gap: var(--spacing-sm);
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .nav-item a {
+                font-size: 0.9rem;
+                padding: 0 var(--spacing-sm);
+            }
+
+            .nav-icons {
+                gap: var(--spacing-sm);
+            }
+
+            .nav-icon {
+                font-size: 1rem;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .nav-menu {
+                gap: var(--spacing-sm);
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-item {
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-item a {
+                display: block;
+                padding: var(--spacing-sm) 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#">Shopping</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Deals</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#" class="nav-icon">🛒
+                    <span class="cart-badge">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
